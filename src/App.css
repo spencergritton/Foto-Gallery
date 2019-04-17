@@ -1,0 +1,496 @@
+.App {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome and Opera */
+}
+
+:root {
+  --font-size: calc(8px + .8vw);
+}
+
+.Header {
+  display: flex;
+  font-size: var(--font-size);
+  justify-content: space-between;
+}
+
+.Header .Logo img {
+  margin-left: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.Header .Links {
+  margin-right: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Header .Links p {
+  margin-right: 30px;
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  color: dimgray;
+}
+
+.Header .Links p #link:link {
+  color: dimgray;
+  text-decoration: none;
+}
+
+.Header .Links p #link:visited {
+  color: dimgray;
+  text-decoration: none;
+}
+
+.Header .Links p #link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.Header .Links p #link:active{
+  color: dimgray;
+  text-decoration: none;
+}
+
+
+.Portfolio
+{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 50px;
+  width: 85%;
+}
+
+.Portfolio img:hover {
+  cursor: pointer;
+}
+
+.Portfolio h1 {
+  color: cadetblue;
+  font-size: calc(var(--font-size)*3);
+  font-weight: 400;
+}
+.Portfolio #albums {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Portfolio .albumPicture {
+  position: relative;
+}
+
+.Portfolio #albums img {
+
+  width: 330px;
+  height: 330px;
+  margin: 30px;
+}
+
+.Portfolio #albums p {
+  color: white;
+  padding: 25px 60px 25px 60px;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.Portfolio .ImagePost {
+  border-bottom: 1px solid black;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 25px;
+  width: auto;
+}
+
+.Portfolio .ImagePost img {
+  max-height: 600px;
+  max-width: 400px;
+  padding-right: 15px;
+}
+
+.Portfolio .ImagePost img:hover {
+  cursor: auto;
+}
+
+.Portfolio .ImagePost .Description {
+  border-bottom: 1px solid #212122;
+  display: flex;
+  padding-bottom: 5px;
+  width: 400px;
+}
+
+.Portfolio .ImagePost .DescriptionAndTags {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(var(--font-size)*0.7);
+  font-family: 'Roboto', sans-serif;
+}
+
+.Portfolio .ImagePost .Tags a {
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.Portfolio .ImagePost .Tags svg, .Portfolio .ImagePost .Tags i {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+
+.Portfolio .ImagePost .Tags {
+  padding-top: 5px;
+  font-size: calc(var(--font-size)*0.9);
+}
+
+.Portfolio .ImagePost .Tags .fa-shopping-basket,.Portfolio .ImagePost .Tags .fa-twitter,.Portfolio .ImagePost .Tags .fa-instagram {
+  margin-right: 15px;
+  color: darkgray;
+}
+
+.Portfolio .ImagePost .Tags .fa-twitter {
+  color: #0084b4;
+}
+
+.Portfolio .ImagePost .Tags .fa-instagram {
+}
+
+.Contact {
+  margin-top: 15px;
+}
+
+.Contact .Content {
+  display: flex;
+  font-size: var(--font-size);
+
+}
+
+.Contact .Content .ImagePost {
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.Contact .Content .ImagePost .BackgroundImage {
+  height: 22vw;
+  width: 100%;
+}
+
+.Contact .Content .ImagePost .CenteredText {
+  color: white;
+  display: flex;
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  font-size: calc(var(--font-size)*2);
+  font-weight: 200;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+.Contact h1 {
+  align-content: center;
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  font-size: calc(var(--font-size)*0.9);
+  font-weight: 500;
+  text-align: center;
+}
+
+.Contact br {
+  line-height: 150%;
+}
+
+.Contact .ImagePost #TomCruise {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  border-radius: 50%;
+}
+
+.Home .TextPost {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(var(--font-size)*1.2);
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  font-weight: 200;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.Home .TextPost #TomCruise {
+  color: cadetblue;
+  font-size: calc(var(--font-size)*4);
+  font-weight: 400;
+}
+
+.Home .TextPost #Description {
+  color: dimgrey;
+  font-size: calc(var(--font-size)*1.2);
+}
+
+.Footer {
+  text-align: center;
+  background-color: cadetblue;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  right: 0;
+  padding: 10vw;
+}
+
+.Footer .fa-user, .fa-facebook-f, .twitter {
+  text-decoration: none;
+  outline: none;
+  color: #14306B;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.Footer .fa-facebook-f {
+  color: #3B5998;
+}
+
+.Footer .twitter {
+  color: #0084b4;
+}
+
+.Footer div {
+  color: white;
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  font-size: calc(var(--font-size)*.8);
+  font-weight: 300;
+}
+
+.Footer a:visited { text-decoration: none; color: white; }
+.Footer a:hover { text-decoration: none; color:white; }
+.Footer a:focus { text-decoration: none; color:white; }
+.Footer a:hover, a:active { text-decoration: none; color:white; }
+
+.About {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About h1 {
+  align-items: center;
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  font-weight: 400;
+  color: cadetblue;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.About p {
+  align-items: center;
+}
+
+.About p {
+  padding: 1%;
+}
+
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+.Shop {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  padding-top: 5vw;
+  flex-direction: row;
+}
+
+.Shop th, td, p, tr, h1, h2, h3, h4, h5, h6, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+.Shop table {
+  border-collapse: collapse;
+}
+
+.Shop td {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-right: 2%;
+}
+
+.Shop .LeftSide .Border {
+  border-bottom: 1px solid #000;
+}
+
+.Shop .RightSide {
+  padding-left: 4%;
+}
+
+.Shop .RightSide p {
+  padding-bottom: 6%;
+}
+
+.Shop .RightSide button {
+  border: none;
+  color: white;
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 170px;
+}
+
+.Shop .RightSide .ButtonTransition {
+  background-color: lightgray;
+  color: black;
+}
+
+.Shop .RightSide .ButtonTransition:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+.Shop .RightSide h3 {
+  padding-top: 8%;
+}
+
+.Shop .RightSide h4 {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.Shop .RightSide input {
+  border: none;
+  text-decoration: none;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: lightgray;
+  width: 170px;
+}
+
+.ShopObject #ShopObjectTitle {
+  font-family: "Segoe UI","Gill Sans","Gill Sans MT","GillSans","Trebuchet MS",Arial,sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.LeftSide th:nth-child(1) {
+  width: 200px;
+}
+
+.LeftSide th:nth-child(2) {
+  padding-left: 35px;
+  position: relative;
+  text-align: left;
+  width: 500px;
+}
+
+.LeftSide th:nth-child(3) {
+  width: 230px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.ShopObject td:nth-child(1) {
+  text-align: center;
+  width: 200px;
+  border-right: 1px solid black;
+}
+
+.ShopObject td:nth-child(2) {
+  padding-left: 15px;
+  position: relative;
+  text-align: left;
+  width: 500px;
+}
+
+.ShopObject td:nth-child(3) {
+  width: 230px;
+  text-align: right;
+}
+
+.ShopObject {
+  padding-top: 5px;
+  border-bottom: 1px solid black;
+}
+
+#NoItemsMessage{
+  color: red;
+  font-style: italic;
+}
+
+.ShopObject img {
+  width: 150px;
+  height: auto;
+}
+
+#ReturnPolicy {
+  display: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#DeleteShopItem {
+  display: flex;
+  cursor: pointer;
+}
+
+.ShopObject .ImageContainer {
+  position: relative;
+  text-align: center;
+}
+
+.ShopObject .TextBlock {
+  color: white;
+  font-weight: 800;
+  background: rgba(0,0,0,0.6);
+  padding: 3%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1921px) {
+  :root {
+    --font-size: calc(8px + .6vw);
+  }
+}
